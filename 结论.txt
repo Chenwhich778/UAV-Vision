@@ -1,0 +1,3 @@
+cnn架构效果不好
+mobilenet架构效果不错
+但是转换成tflite能力大打折扣

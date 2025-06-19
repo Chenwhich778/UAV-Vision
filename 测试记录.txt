@@ -1,0 +1,21 @@
+Found 11581 files belonging to 5 classes.
+2025-06-19 01:33:28.344874: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-06-19 01:33:28.359328: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x235064ed110 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2025-06-19 01:33:28.359939: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Found 1947 files belonging to 5 classes.
+122/122 [==============================] - 55s 453ms/step - loss: 0.1056 - accuracy: 0.9635
+Mobilenet test accuracy : 0.9635336399078369
+[[ 66.   0.   1.   0.   2.]
+ [  0. 216.  14.   2.   2.]
+ [  0.   8. 629.   5.   4.]
+ [  0.   2.   8.  98.   2.]
+ [  0.   4.  16.   1. 867.]]
+
+[[0.95652174 0.         0.01449275 0.         0.02898551]
+ [0.         0.92307692 0.05982906 0.00854701 0.00854701]
+ [0.         0.0123839  0.97368421 0.00773994 0.00619195]
+ [0.         0.01818182 0.07272727 0.89090909 0.01818182]
+ [0.         0.0045045  0.01801802 0.00112613 0.97635135]]
+
+进程已结束，退出代码为 0

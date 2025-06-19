@@ -1,0 +1,47 @@
+C:\Users\35254\miniconda3\envs\cc\python.exe E:\GithubCode_temp\tf_Project\vegetables_tf2.3\train_mobilenet.py
+Found 11581 files belonging to 5 classes.
+2025-06-18 23:46:24.580665: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2025-06-18 23:46:24.593932: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x24f37cb6e80 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2025-06-18 23:46:24.594289: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Found 1947 files belonging to 5 classes.
+['四旋翼', '客机', '战斗机', '水上飞机', '直升飞机']
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #
+=================================================================
+rescaling (Rescaling)        (None, 224, 224, 3)       0
+_________________________________________________________________
+mobilenetv2_1.00_224 (Functi (None, 7, 7, 1280)        2257984
+_________________________________________________________________
+global_average_pooling2d (Gl (None, 1280)              0
+_________________________________________________________________
+dense (Dense)                (None, 5)                 6405
+=================================================================
+Total params: 2,264,389
+Trainable params: 6,405
+Non-trainable params: 2,257,984
+_________________________________________________________________
+Epoch 1/10
+724/724 [==============================] - 265s 366ms/step - loss: 0.3503 - accuracy: 0.8804 - val_loss: 0.1802 - val_accuracy: 0.9404
+Epoch 2/10
+724/724 [==============================] - 267s 369ms/step - loss: 0.1672 - accuracy: 0.9450 - val_loss: 0.1454 - val_accuracy: 0.9492
+Epoch 3/10
+724/724 [==============================] - 267s 369ms/step - loss: 0.1233 - accuracy: 0.9621 - val_loss: 0.1295 - val_accuracy: 0.9533
+Epoch 4/10
+724/724 [==============================] - 268s 370ms/step - loss: 0.0988 - accuracy: 0.9713 - val_loss: 0.1212 - val_accuracy: 0.9574
+Epoch 5/10
+724/724 [==============================] - 267s 369ms/step - loss: 0.0822 - accuracy: 0.9765 - val_loss: 0.1117 - val_accuracy: 0.9610
+Epoch 6/10
+724/724 [==============================] - 268s 370ms/step - loss: 0.0711 - accuracy: 0.9793 - val_loss: 0.1108 - val_accuracy: 0.9610
+Epoch 7/10
+724/724 [==============================] - 269s 371ms/step - loss: 0.0579 - accuracy: 0.9851 - val_loss: 0.1068 - val_accuracy: 0.9615
+Epoch 8/10
+724/724 [==============================] - 269s 371ms/step - loss: 0.0501 - accuracy: 0.9867 - val_loss: 0.1062 - val_accuracy: 0.9646
+Epoch 9/10
+724/724 [==============================] - 268s 371ms/step - loss: 0.0435 - accuracy: 0.9898 - val_loss: 0.1036 - val_accuracy: 0.9615
+Epoch 10/10
+724/724 [==============================] - 268s 370ms/step - loss: 0.0384 - accuracy: 0.9917 - val_loss: 0.1056 - val_accuracy: 0.9635
+该循环程序运行时间： 2690.1426010131836 s
+
+进程已结束，退出代码为 0
